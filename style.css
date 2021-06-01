@@ -1,0 +1,19 @@
+body {
+  overflow: hidden;
+}
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+.navbar-brand i {
+  height: 2rem;
+}
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+.navbar-dark .navbar-nav .navbar-link {
+  color: white;
+}
