@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!--
 ASSIGNMENT TOPIC
 You are creating a website to showcase your favourite music albums.
@@ -20,17 +19,7 @@ Could be the Amazon way, the Spotify or Apple music way or any other music colle
 HINT: Manage your time in order to finish the structure and responsiveness before focusing on details.
 -->
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
-
-    <style>
-      /* EXERCISE 1
+<!-- /* EXERCISE 1
             For every Album we'd like to have a consistent style.
             Create a class for:
             - The album container
@@ -42,16 +31,14 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - etc
 
             to make sure you give every album the same consistent appearance.
-         */
-    </style>
-  </head>
-  <body>
-    <!-- EXERCISE 2 
+         */ -->
+
+<!-- EXERCISE 2 
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page
         -->
 
-    <!-- EXERCISE 3
+<!-- EXERCISE 3
             Create a responsive section for your favourite albums.
             In this section you should have:
             - 4 albums per row when the screen is very large
@@ -59,7 +46,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 2 albums per row when you are on a small screen
         -->
 
-    <!-- EXERCISE 4
+<!-- EXERCISE 4
             Create a section for the album reviews.
             Pick one of your fav albums, and create a section with:
             - Cover
@@ -71,88 +58,475 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - ... And whatever you think it's interesting about it!
         -->
 
-    <!-- EXERCISE 5
+<!-- EXERCISE 5
             Worst album list! Find out the music you don't really like or you find overrated and list it
             in this "hall of shame" chart!
         -->
 
-    <!-- EXERCISE 6
+<!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
 
-    <!-- EXERCISE 7
+<!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
             Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
         -->
 
-    <!-- EXERCISE 8
+<!-- EXERCISE 8
             Implement a footer with some information / social links
         -->
 
-    <!-- ############ EXTRA:
+<!-- ############ EXTRA:
         EXERCISE 9
             Create an album details area that is going to be toggled on and off by clicking on the album image
         -->
 
-    <!-- EXERCISE 10
+<!-- EXERCISE 10
             Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible) 
             (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
         -->
 
-    <!--
+<!--
          EXERCISE 11
             Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
         -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><i class="bi bi-music-note-beamed"></i> Mysic</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"> Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Pricing</a>
-            </li>
-          </ul>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand text-light" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-link text-light" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link text-light" href="#">Features</a>
+          <a class="nav-link text-light" href="#">Pricing</a>
+          <a
+            class="nav-link text-light"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Disabled</a
+          >
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          dolor ea repudiandae eveniet, ratione aliquid voluptatibus eum
-          aspernatur ipsam nemo est numquam harum tenetur omnis! Aperiam quasi
-          illo vero nobis.
+
+    <!-- container------------------------------------------------------------container -->
+
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col mb-4">
+          <div
+            class="
+              card
+              h-100
+              shadow-lg
+              p-3
+              mb-5
+              bg-white
+              rounded
+              shadow-lg
+              p-3
+              mb-5
+              bg-white
+              rounded
+            "
+          >
+            <img
+              src="https://images.toofab.com/image/07/o/2020/01/13/0718feb83731518da4892d3dcba227fb_md.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="cols-2 top1">
-          <img
-            src="img/karaoke-mic.jpg"
-            class="figure-img img-fluid rounded"
-            alt="Mic"
-          />
+        <div class="col mb-4">
+          <div class="card h-100 shadow-lg p-3 mb-5 bg-white rounded">
+            <img
+              src="https://imgs.aftonbladet-cdn.se/v2/images/2f97688e-0147-41ef-ab0f-eb7a4c25407b?fit=crop&h=842&q=50&w=1100&s=76e532de189213b9e0f5eb19e36e969827e3ff55"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 shadow-lg p-3 mb-5 bg-white rounded">
+            <img
+              src="https://static.billboard.com/files/2021/05/Taylor-Swift-2021-Brit-Awards-Red-Carpet-billboard-1548-1620836537-compressed.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 shadow-lg p-3 mb-5 bg-white rounded">
+            <img
+              src="https://static.billboard.com/files/2021/05/Olivia-Rodrigo-brit-awards-2021-billboard-1548-1621874588-compressed.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- another container-----------------------------------------------new container---------- -->
+
+    <div class="container mt-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col mb-4">
+          <div
+            class="
+              card
+              h-100
+              shadow-lg
+              p-3
+              mb-5
+              bg-white
+              rounded
+              shadow-lg
+              p-3
+              mb-5
+              bg-white
+              rounded
+            "
+          >
+            <img
+              src="https://images.toofab.com/image/07/o/2020/01/13/0718feb83731518da4892d3dcba227fb_md.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 shadow-lg p-3 mb-5 bg-white rounded">
+            <img
+              src="https://imgs.aftonbladet-cdn.se/v2/images/2f97688e-0147-41ef-ab0f-eb7a4c25407b?fit=crop&h=842&q=50&w=1100&s=76e532de189213b9e0f5eb19e36e969827e3ff55"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 shadow-lg p-3 mb-5 bg-white rounded">
+            <img
+              src="https://static.billboard.com/files/2021/05/Taylor-Swift-2021-Brit-Awards-Red-Carpet-billboard-1548-1620836537-compressed.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 shadow-lg p-3 mb-5 bg-white rounded">
+            <img
+              src="https://static.billboard.com/files/2021/05/Olivia-Rodrigo-brit-awards-2021-billboard-1548-1621874588-compressed.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- new container------------------------------------------------------newwwwwwww -->
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-9">
+          <img
+              src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+        </div>
+        <div class="col-3 mt-5">
+          <h5 class="card-title text-lg-center text-danger mt-5">Kanye West</h5>
+              <p class="card-text text-lg-center">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="mt-5 text-lg-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque deleniti adipisci architecto recusandae sit dolorum eligendi hic quidem exercitationem, dolores in veritatis, repellendus ullam. Necessitatibus error ipsum nam soluta molestiae.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- album----------------------------------------------------------------cover----------------- -->
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2 mx-1">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.hiphopdx.com/2015/11/151103_KanyeWest.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
